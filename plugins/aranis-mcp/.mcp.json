@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "aranis": {
+      "type": "http",
+      "url": "https://app.aranis.ai/api/mcp"
+    }
+  }
+}

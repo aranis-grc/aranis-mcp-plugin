@@ -1,0 +1,20 @@
+{
+  "name": "aranis",
+  "interface": {
+    "displayName": "Aranis"
+  },
+  "plugins": [
+    {
+      "name": "aranis-mcp",
+      "source": {
+        "source": "local",
+        "path": "./plugins/aranis-mcp"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    }
+  ]
+}

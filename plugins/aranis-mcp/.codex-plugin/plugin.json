@@ -1,0 +1,38 @@
+{
+  "name": "aranis-mcp",
+  "version": "0.1.0",
+  "description": "Connect Codex to the Aranis remote MCP server for third-party risk, control gaps and assessment analysis.",
+  "author": {
+    "name": "Aranis"
+  },
+  "homepage": "https://aranis.ai",
+  "keywords": [
+    "aranis",
+    "mcp",
+    "tprm",
+    "vendor-risk",
+    "grc",
+    "compliance"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Aranis",
+    "shortDescription": "Vendors, risk scores and control gaps, from your Aranis organization.",
+    "longDescription": "Reads your organization's third-party risk data from Aranis: which vendors exist, how risky each one is and why, and which controls are missing or partial. Sign-in happens through Aranis with OAuth — there is no key to paste — and you choose which organization the access applies to. Read-only.",
+    "developerName": "Aranis",
+    "category": "Security",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://aranis.ai",
+    "privacyPolicyURL": "https://aranis.ai/en/privacy",
+    "defaultPrompt": [
+      "Quais fornecedores da minha organização estão sem avaliação concluída?",
+      "Qual é o risco do fornecedor X e o que puxa a nota para baixo?",
+      "Quais lacunas de controle aparecem com severidade alta?"
+    ],
+    "brandColor": "#11162A"
+  }
+}
