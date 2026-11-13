@@ -64,6 +64,7 @@ list. Grouped by what they cover:
 | Documents | `list_documents`, `get_document`, `list_document_templates` | `upsert_document` (drafts), `create_document_from_template`, `submit_document_for_review` |
 | Trust Center | `get_trust_center` | `upsert_trust_center_content`, `sync_trust_center_subprocessors` |
 | BI | `describe_bi_catalog`, `run_bi_query`, `list_bi_panels` | `save_bi_panel`, `update_bi_widget` |
+| Self-assessment (your own controls) | `list_org_controls` | `set_control_status`, `attach_control_evidence` |
 | Reasoning | `ask_assessment_agent` | |
 
 Reading needs the `mcp:read` scope and `ask_assessment_agent` needs `mcp:agent`.
