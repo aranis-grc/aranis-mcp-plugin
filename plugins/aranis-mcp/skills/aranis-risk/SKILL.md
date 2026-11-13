@@ -90,6 +90,10 @@ Pay extra attention to these:
   `sync_trust_center_subprocessors` change public content. Say so before asking.
 - **`record_continuity_exercise`** with a performed exercise marks the strategy
   as validated. Only record exercises that really happened.
+- **`set_control_status`** declares the organization's own control status. A
+  status a person declared or a scan confirmed is refused as
+  `declared_divergence`; send `override_declared` only after showing that to
+  the person and getting their yes. `list_org_controls` needs a filter.
 - **Documents and plans are drafts.** `upsert_document` edits drafts only and a
   body sent replaces that language's body; the preview warns if tables or images
   would be lost.
