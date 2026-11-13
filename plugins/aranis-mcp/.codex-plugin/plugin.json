@@ -1,7 +1,7 @@
 {
   "name": "aranis-mcp",
-  "version": "0.1.0",
-  "description": "Connect Codex to the Aranis remote MCP server for third-party risk, control gaps and assessment analysis.",
+  "version": "0.2.0",
+  "description": "Connect Codex to the Aranis remote MCP server: third-party risk, inventory, risk register, privacy, continuity, documents, Trust Center and BI.",
   "author": {
     "name": "Aranis"
   },
@@ -12,14 +12,17 @@
     "tprm",
     "vendor-risk",
     "grc",
-    "compliance"
+    "compliance",
+    "privacy",
+    "lgpd",
+    "bcm"
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Aranis",
-    "shortDescription": "Vendors, risk scores and control gaps, from your Aranis organization.",
-    "longDescription": "Reads your organization's third-party risk data from Aranis: which vendors exist, how risky each one is and why, and which controls are missing or partial. Sign-in happens through Aranis with OAuth — there is no key to paste — and you choose which organization the access applies to. Read-only.",
+    "shortDescription": "Your Aranis organization in Codex: read it, and change it with your confirmation.",
+    "longDescription": "Works with your Aranis organization from Codex: vendors and their risk, control gaps and action plans, the asset and process inventory, the risk register, privacy (processing activities, LIA, RIPD, TIA, DIA), business impact analysis and continuity, documents, the Trust Center and BI. Sign-in happens through Aranis with OAuth, with no key to paste, and you choose which organization the access applies to. Every change is shown to you first and only happens after you confirm; which changes are available depends on your organization's plan and your role.",
     "developerName": "Aranis",
     "category": "Security",
     "capabilities": [
@@ -30,8 +33,8 @@
     "privacyPolicyURL": "https://aranis.ai/en/privacy",
     "defaultPrompt": [
       "Quais fornecedores da minha organização estão sem avaliação concluída?",
-      "Qual é o risco do fornecedor X e o que puxa a nota para baixo?",
-      "Quais lacunas de controle aparecem com severidade alta?"
+      "Quais processos críticos ainda não têm estratégia de recuperação?",
+      "Monte um painel de BI com os riscos abertos por categoria."
     ],
     "brandColor": "#11162A"
   }
